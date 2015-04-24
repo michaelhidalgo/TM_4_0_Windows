@@ -1,0 +1,152 @@
+//- Breadcrumbs
+mixin breadcrumbs
+  if breadcrumbs && breadcrumbs.size() > 1
+    dl.sub-nav
+      #navigation
+        for item,index in breadcrumbs
+          if index == breadcrumbs.size() -1
+            dd.active
+              a(href= item.href)= item.title
+          else
+            dd
+              if activeFilter
+                a(href= item.href + '/' + activeFilter.ids)= item.title
+              else
+                a(href= item.href)= item.title
+
+//- Form Inputs
+mixin username-input
+  label(for='username') Username
+  input(type='text', id='username', name='username', placeholder='Username',value='#{viewModel?viewModel.username:""}',required,maxlength='256')
+
+mixin password-input
+  label(for='password') Password
+  input(type='password', id='password', name='password', placeholder='Password',value='#{viewModel?viewModel.password:""}',required,maxlength='256')
+
+mixin confirm-password-input
+  label(for='confirm-password') Confirm Password
+  input(type='password', id='confirm-password', name='confirm-password',placeholder='Password',value='#{viewModel?viewModel.confirmpassword:""}',maxlength='256')
+
+mixin email-input
+  label(for='email') Email Address
+  input(type='email', id='email', name='email', placeholder='Email Address',value='#{viewModel?viewModel.email:""}',maxlength='256')
+
+//- Form Buttons
+mixin login-button
+  button.full-width(type='submit', id='btn-login') Login
+
+mixin sign-up-button
+  button.full-width(type='submit', id='btn-sign-up') Sign Up
+
+mixin get-password-button
+  button.full-width(type='submit' id='btn-get-password') Get Password
+
+mixin reset-password-button
+  button.full-width(type='submit' id='btn-reset-password') Reset Password
+
+mixin start-trial-button
+  button.btn-landing
+    i.fi-key.btn-icon
+    span Start your free trial today
+
+mixin see-for-yourself-button
+  button.btn-landing
+    i.fi-eye.btn-icon
+    span See for yourself
+
+mixin menu-icon
+  i.fi-list
+
+mixin i-phone
+  i.fi-telephone
+
+mixin i-email
+  i.fi-mail
+
+mixin i-marker
+  i.fi-marker
+
+mixin i-twitter
+  i.fi-social-twitter
+
+mixin i-toc
+  i.fi-paperclip
+
+mixin arrow-down
+  i.fi-arrow-down
+
+mixin search-icon
+  i.fi-magnifying-glass
+
+mixin article-icon
+  i.fi-page
+
+mixin alert-icon
+  i.fi-megaphone
+
+mixin checklist-icon
+  i.fi-checkbox(title='Checklist')
+
+mixin guideline-icon
+  i.fi-book(title='Guideline')
+
+mixin code-sample-icon
+  i.fi-puzzle(title='Code Sample')
+
+mixin how-to-icon
+  i.fi-list-bullet(title='How To')
+
+mixin any-technology-icon
+  i.fi-flag(title='Any Technology')
+
+mixin html5-icon
+  i.fi-html5(title='HTML5')
+
+mixin vuln-icon
+  i.fi-shield(title='Vulnerability')
+
+mixin filter-icon(filter, title)
+  case filter
+    when 'Type'
+      case title
+        when 'Checklist Item'
+          +checklist-icon
+        when 'Guideline'
+          +guideline-icon
+        when 'Code Example'
+          +code-sample-icon
+        when 'How To'
+          +how-to-icon
+        when 'Vulnerability'
+          +vuln-icon
+        default
+          span 
+
+    when 'Technology'
+      case title
+        when '.NET'
+        when 'ASP.NET 3.5'
+        when '.NET 3.5'
+        when 'ASP.NET 4.0'
+          .technology-icon.asp(title='ASP.Net')
+        when 'Android'
+          .technology-icon.android(title='Android')
+        when 'C++'
+          .technology-icon.c-plus-plus(title='C++')
+        when 'iOS'
+          .technology-icon.ios(title='iOS')
+        when 'Java'
+          .technology-icon.java(title='Java')
+        when 'PHP'
+          .technology-icon.php(title='PHP')
+        when 'Scala Play'
+        when 'Scala with Play Framework'
+          .technology-icon.scala(title='Scala')
+        when 'WCF 3.5'
+          .technology-icon.wcf(title='WCF')
+        when 'Web Application'
+          .technology-icon.web-app(title='Web Application')
+        when 'HTML5'
+          +html5-icon
+        default
+          +any-technology-icon

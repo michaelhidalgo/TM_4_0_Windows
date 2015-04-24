@@ -1,0 +1,69 @@
+{
+  "name": "TM_4_0_GraphDB",
+  "version": "0.0.1",
+  "description": "Code for the Graph DB used by TM 4.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node ./node_modules/mocha/bin/mocha --compilers coffee:coffee-script/register --recursive -R list",
+    "test-js": "node ./node_modules/mocha/bin/mocha --recursive -R list ./.dist/test",
+    "clear-cache": "touch .tmCache/.deleteCacheNext",
+    "watch": "mocha -w --compilers coffee:coffee-script/register --watch-extensions jade  --recursive -R list",
+    "watch-js": "node ./node_modules/mocha/bin/mocha --recursive -R list -w ./.dist/test",
+    "dev": "node ./node_modules/supervisor/lib/cli-wrapper.js -e 'coffee,js' index.js",
+    "compile": "coffee --output ./.dist/src --compile ./src &&  coffee --output ./.dist/test --compile ./test",
+    "coverage": "./bin/local-code-coverage.sh",
+    "installWinSvc": "node ./node_modules/winser/bin/winser -i",
+    "uninstallWinSvc": "node ./node_modules/winser/bin/winser -r",
+    "coverage-publish": "./bin/publish-code-coverage.sh",
+    "coverage-local": "node_modules/.bin/onchange 'src/**/*.coffee' 'test/**/*.coffee' -- ./bin/lcov-code-coverage.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TeamMentor/TM_4_0_GraphDB.git"
+  },
+  "keywords": [
+    "TeamMentor",
+    "Graph",
+    "LevelGraph"
+  ],
+  "author": "Dinis Cruz <dinis.cruz@owasp.org> (http://blog.diniscruz.com/)",
+  "license": "TeamMentor License",
+  "bugs": {
+    "url": "https://github.com/TeamMentor/TM_4_0_GraphDB/issues"
+  },
+  "homepage": "https://github.com/TeamMentor/TM_4_0_GraphDB",
+  "dependencies": {
+    "async": "latest",
+    "body-parser": "latest",
+    "cheerio": "latest",
+    "coffee-script": "latest",
+    "compression": "latest",
+    "express": "latest",
+    "fluentnode": "latest",
+    "github": "latest",
+    "jade": "latest",
+    "jscreole": "latest",
+    "jsdom": "3.1.2",
+    "levelgraph": "latest",
+    "markdown-it": "latest",
+    "node-uuid": "latest",
+    "request": "latest",
+    "swagger-client": "git+https://github.com/TeamMentor/swagger-js.git",
+    "swagger-node-express": "latest",
+    "teammentor": "latest",
+    "vis": "latest",
+    "winser": "latest",
+    "winston": "^0.9.0",
+    "xml2js": "latest"
+  },
+  "devDependencies": {
+    "chai": "latest",
+    "coveralls": "latest",
+    "html-file-cov": "latest",
+    "mocha": "latest",
+    "mocha-lcov-reporter": "latest",
+    "supertest": "latest",
+    "supervisor": "latest"
+  }
+}

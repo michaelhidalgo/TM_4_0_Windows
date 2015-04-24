@@ -1,0 +1,13 @@
+extends ../_layouts/flare_page
+include ../mixins/application-mixins
+
+block content
+	#application
+		#left-nav
+		#results
+			+flare-results-save-clear
+			#articles
+				+articles-list
+			+copyright
+		#right-nav
+			+save-div

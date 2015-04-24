@@ -1,0 +1,8 @@
+node_modules
+.tmCache
+npm-debug.log
+.dist
+.tm-Config.json
+.idea
+.coverage
+.logs
