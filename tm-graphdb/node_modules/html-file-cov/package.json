@@ -1,0 +1,52 @@
+{
+  "version": "1.0.0",
+  "name": "html-file-cov",
+  "description": "Mocha html-cov reporter replacement which writes to a file",
+  "license": "MIT",
+  "keywords": [
+    "mocha",
+    "html-cov",
+    "coverage"
+  ],
+  "author": {
+    "name": "Tom Rudick"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tmrudick/html-file-cov"
+  },
+  "engines": {
+    "node": ">=0.6"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "mocha": ">=1.6.0",
+    "jade": "0.26.3"
+  },
+  "gitHead": "d5b267b7cfbcbe613ef99f857cc80d1ca96bcff0",
+  "bugs": {
+    "url": "https://github.com/tmrudick/html-file-cov/issues"
+  },
+  "homepage": "https://github.com/tmrudick/html-file-cov",
+  "_id": "html-file-cov@1.0.0",
+  "scripts": {},
+  "_shasum": "4c2acda68d38794098863bdda219c0b0ba2ea59f",
+  "_from": "html-file-cov@latest",
+  "_npmVersion": "1.4.28",
+  "_npmUser": {
+    "name": "tmrudick",
+    "email": "tmrudick@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "tmrudick",
+      "email": "tmrudick@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "4c2acda68d38794098863bdda219c0b0ba2ea59f",
+    "tarball": "http://registry.npmjs.org/html-file-cov/-/html-file-cov-1.0.0.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/html-file-cov/-/html-file-cov-1.0.0.tgz"
+}

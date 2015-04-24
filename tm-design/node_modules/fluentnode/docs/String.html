@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>String.litcoffee</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+  <link rel="stylesheet" media="all" href="docco.css" />
+</head>
+<body>
+  <div id="container">
+    <div id="background"></div>
+    
+      <ul id="jump_to">
+        <li>
+          <a class="large" href="javascript:void(0);">Jump To &hellip;</a>
+          <a class="small" href="javascript:void(0);">+</a>
+          <div id="jump_wrapper">
+          <div id="jump_page">
+            
+              
+              <a class="source" href="Array.html">
+                Array.litcoffee
+              </a>
+            
+              
+              <a class="source" href="Boolean.html">
+                Boolean.litcoffee
+              </a>
+            
+              
+              <a class="source" href="Function.html">
+                Function.litcoffee
+              </a>
+            
+              
+              <a class="source" href="Number.html">
+                Number.litcoffee
+              </a>
+            
+              
+              <a class="source" href="Object.html">
+                Object.litcoffee
+              </a>
+            
+              
+              <a class="source" href="String.html">
+                String.litcoffee
+              </a>
+            
+              
+              <a class="source" href="_register.html">
+                _register.js
+              </a>
+            
+              
+              <a class="source" href="assert_Array.html">
+                assert_Array.litcoffee
+              </a>
+            
+              
+              <a class="source" href="assert_Boolean.html">
+                assert_Boolean.litcoffee
+              </a>
+            
+              
+              <a class="source" href="assert_Function.html">
+                assert_Function.litcoffee
+              </a>
+            
+              
+              <a class="source" href="assert_Number.html">
+                assert_Number.litcoffee
+              </a>
+            
+              
+              <a class="source" href="assert_Object.html">
+                assert_Object.litcoffee
+              </a>
+            
+              
+              <a class="source" href="assert_String.html">
+                assert_String.litcoffee
+              </a>
+            
+              
+              <a class="source" href="console.html">
+                console.litcoffee
+              </a>
+            
+              
+              <a class="source" href="crypto.html">
+                crypto.litcoffee
+              </a>
+            
+              
+              <a class="source" href="fs.html">
+                fs.litcoffee
+              </a>
+            
+              
+              <a class="source" href="globals.html">
+                globals.litcoffee
+              </a>
+            
+              
+              <a class="source" href="http.html">
+                http.litcoffee
+              </a>
+            
+              
+              <a class="source" href="index.html">
+                index.md
+              </a>
+            
+              
+              <a class="source" href="path.html">
+                path.litcoffee
+              </a>
+            
+              
+              <a class="source" href="process.html">
+                process.litcoffee
+              </a>
+            
+              
+              <a class="source" href="Array.test.html">
+                Array.test.coffee
+              </a>
+            
+              
+              <a class="source" href="Boolean.test.html">
+                Boolean.test.coffee
+              </a>
+            
+              
+              <a class="source" href="Function.test.html">
+                Function.test.coffee
+              </a>
+            
+              
+              <a class="source" href="Number.test.html">
+                Number.test.coffee
+              </a>
+            
+              
+              <a class="source" href="Object.test.html">
+                Object.test.coffee
+              </a>
+            
+              
+              <a class="source" href="String.test.html">
+                String.test.coffee
+              </a>
+            
+              
+              <a class="source" href="Array.test.html">
+                Array.test.coffee
+              </a>
+            
+              
+              <a class="source" href="Boolean.test.html">
+                Boolean.test.coffee
+              </a>
+            
+              
+              <a class="source" href="Function.test.html">
+                Function.test.coffee
+              </a>
+            
+              
+              <a class="source" href="Number.test.html">
+                Number.test.coffee
+              </a>
+            
+              
+              <a class="source" href="Object.test.html">
+                Object.test.coffee
+              </a>
+            
+              
+              <a class="source" href="String.test.html">
+                String.test.coffee
+              </a>
+            
+              
+              <a class="source" href="console.test.html">
+                console.test.coffee
+              </a>
+            
+              
+              <a class="source" href="crypto.test.html">
+                crypto.test.coffee
+              </a>
+            
+              
+              <a class="source" href="fs.test.html">
+                fs.test.coffee
+              </a>
+            
+              
+              <a class="source" href="globals.test.html">
+                globals.test.coffee
+              </a>
+            
+              
+              <a class="source" href="http.test.html">
+                http.test.coffee
+              </a>
+            
+              
+              <a class="source" href="path.test.html">
+                path.test.coffee
+              </a>
+            
+              
+              <a class="source" href="process.test.html">
+                process.test.coffee
+              </a>
+            
+          </div>
+        </li>
+      </ul>
+    
+    <ul class="sections">
+        
+          <li id="title">
+              <div class="annotation">
+                  <h1>String.litcoffee</h1>
+              </div>
+          </li>
+        
+        
+        
+        <li id="section-1">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-1">&#182;</a>
+              </div>
+              <p>Methods that extend the native Javascript String class</p>
+<p>Here is the list of ‘default’ String global objects:
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">Global_Objects/String</a></p>
+<p>Note that there are more String Extension Methods (they exist inside their main dependency: crypto, path, fs)</p>
+<p>methods</p>
+<p>twin methods: add</p>
+<p>@.<strong>append</strong> value</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-attribute">String</span>::append = <span class="hljs-function"><span class="hljs-params">(value)</span>-&gt;</span>
+    @ + <span class="hljs-keyword">if</span> value <span class="hljs-keyword">then</span> value <span class="hljs-keyword">else</span> <span class="hljs-string">''</span>
+
+<span class="hljs-attribute">String</span>::add = <span class="hljs-attribute">String</span>::append</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-2">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-2">&#182;</a>
+              </div>
+              <p>@.<strong>after</strong> value</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-attribute">String</span>::after = <span class="hljs-function"><span class="hljs-params">(value)</span>-&gt;</span>
+  <span class="hljs-keyword">if</span> ((index = @.indexOf(    value)) == -<span class="hljs-number">1</span> )
+    <span class="hljs-string">''</span>
+  <span class="hljs-keyword">else</span>
+    @.substr(index + value.size())</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-3">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-3">&#182;</a>
+              </div>
+              <p>@.<strong>after_Last</strong> value</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-attribute">String</span>::after_Last = <span class="hljs-function"><span class="hljs-params">(value)</span>-&gt;</span>
+  <span class="hljs-keyword">if</span> ((index = @.lastIndexOf(value)) == -<span class="hljs-number">1</span> )
+    <span class="hljs-string">''</span>
+  <span class="hljs-keyword">else</span>
+    @.substr(index + value.size())</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-4">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-4">&#182;</a>
+              </div>
+              <p>@.<strong>before</strong> value</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-attribute">String</span>::before = <span class="hljs-function"><span class="hljs-params">(value)</span>-&gt;</span>
+  @.substring(<span class="hljs-number">0</span>,@.indexOf(value))</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-5">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-5">&#182;</a>
+              </div>
+              <p>@.<strong>before_Last</strong> value</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-attribute">String</span>::before_Last = <span class="hljs-function"><span class="hljs-params">(value)</span>-&gt;</span>
+  @.substring(<span class="hljs-number">0</span>,@.lastIndexOf(value))</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-6">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-6">&#182;</a>
+              </div>
+              <p>@.<strong>contains</strong> value</p>
+<p>Checks that <code>value</code> is inside @.</p>
+<p>If <code>value</code> is an Array, then all elements are expected to be found inside @</p>
+<p>If <code>value</code> is an RegExp then checks if it matches @</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-attribute">String</span>::contains = <span class="hljs-function"><span class="hljs-params">(value)</span>-&gt;</span>
+  <span class="hljs-keyword">if</span> value <span class="hljs-keyword">instanceof</span> RegExp
+    regex = <span class="hljs-keyword">new</span> RegExp(value)
+    <span class="hljs-keyword">return</span> regex.exec(@) <span class="hljs-keyword">isnt</span> <span class="hljs-literal">null</span>
+  <span class="hljs-keyword">if</span> value <span class="hljs-keyword">instanceof</span> Array
+    <span class="hljs-keyword">for</span> item <span class="hljs-keyword">in</span> value
+      <span class="hljs-keyword">if</span> @.indexOf(item) <span class="hljs-keyword">is</span> -<span class="hljs-number">1</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>
+  @.indexOf(value) &gt; -<span class="hljs-number">1</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-7">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-7">&#182;</a>
+              </div>
+              <p>@.<strong>ends_With</strong> value</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-attribute">String</span>::ends_With = <span class="hljs-function"><span class="hljs-params">(value)</span>-&gt;</span>
+  <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> value
+    <span class="hljs-literal">false</span>
+  <span class="hljs-keyword">else</span>
+    @.valueOf().slice(-value.length) <span class="hljs-keyword">is</span> value</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-8">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-8">&#182;</a>
+              </div>
+              <p>@.<strong>is</strong> value</p>
+<p>Returns true if <code>@</code> is equal to <code>value</code></p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-attribute">String</span>::<span class="hljs-keyword">is</span> = <span class="hljs-function"><span class="hljs-params">(value)</span>-&gt;</span>
+  @.valueOf() <span class="hljs-keyword">is</span> value</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-9">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-9">&#182;</a>
+              </div>
+              <p>@.<strong>is_Not</strong> value</p>
+<p>Returns true if <code>@</code> is NOT equal to <code>value</code></p>
+<p>twin methods: isnt</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-attribute">String</span>::is_Not = <span class="hljs-function"><span class="hljs-params">(value)</span>-&gt;</span>
+  @.valueOf() <span class="hljs-keyword">isnt</span> value
+
+<span class="hljs-attribute">String</span>::<span class="hljs-keyword">isnt</span> = <span class="hljs-attribute">String</span>::is_Not</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-10">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-10">&#182;</a>
+              </div>
+              <p>@.<strong>lines</strong></p>
+<p>returns @ split by ‘/n’</p>
+<p>twin methods: split_Lines</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-attribute">String</span>::lines = <span class="hljs-function"><span class="hljs-params">()</span>-&gt;</span>
+  @.split(<span class="hljs-regexp">/\r\n|[\n\r\u0085\u2028\u2029]/g</span>)
+
+<span class="hljs-attribute">String</span>::split_Lines = <span class="hljs-attribute">String</span>::lines</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-11">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-11">&#182;</a>
+              </div>
+              <p>@.<strong>lower</strong></p>
+<p>returns @ in lowercase</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-attribute">String</span>::lower = <span class="hljs-function"><span class="hljs-params">()</span>-&gt;</span>
+  @.toLowerCase()</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-12">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-12">&#182;</a>
+              </div>
+              <p>@.<strong>not_Contains</strong> value</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-attribute">String</span>::not_Contains  = <span class="hljs-function"><span class="hljs-params">(value)</span>-&gt;</span>
+  @.indexOf(value) == -<span class="hljs-number">1</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-13">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-13">&#182;</a>
+              </div>
+              <p>@.<strong>only_Letters</strong></p>
+<p>Returns a string where all chars that are not an letter (uppper or lower case) are replaced
+with a - (dash)</p>
+<p>The letters capitalization is not modified</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-attribute">String</span>::only_Letters =
+  <span class="hljs-function"><span class="hljs-params">()</span>-&gt;</span> @.replace(<span class="hljs-regexp">/[^a-zA-Z]/gi</span>, <span class="hljs-string">'-'</span>)</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-14">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-14">&#182;</a>
+              </div>
+              <p>@.<strong>only_Numbers</strong></p>
+<p>Returns a string where all chars that are not an number are replaced
+with a - (dash)</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-attribute">String</span>::only_Numbers = <span class="hljs-function"><span class="hljs-params">()</span>-&gt;</span>
+  @.replace(<span class="hljs-regexp">/[^0-9]/gi</span>, <span class="hljs-string">'-'</span>).lower()</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-15">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-15">&#182;</a>
+              </div>
+              <p>@.<strong>remove</strong> value</p>
+<p>Removes all instances of <strong>value</strong></p>
+<p>Note: <code>@.replace(value,&#39;&#39;)</code> doesn’t work because it
+only removes the first occurance</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-attribute">String</span>::remove = <span class="hljs-function"><span class="hljs-params">(value)</span>-&gt;</span>
+
+  result = @
+  <span class="hljs-keyword">while</span> result.contains(value)
+    result = result.replace(value,<span class="hljs-string">''</span>)
+  result</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-16">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-16">&#182;</a>
+              </div>
+              <p>@.<strong>repeat</strong> value</p>
+<p>Repeats @ <code>value</code> times</p>
+<p>Note: the implementation uses a while loop in order to handle ok cases when
+value is negative or weird</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-attribute">String</span>::repeat = <span class="hljs-function"><span class="hljs-params">(value)</span>-&gt;</span>
+  result = <span class="hljs-string">''</span>
+  <span class="hljs-keyword">if</span> <span class="hljs-keyword">typeof</span>(value) <span class="hljs-keyword">is</span> <span class="hljs-string">'number'</span>
+    <span class="hljs-keyword">while</span> value &gt; <span class="hljs-number">0</span>
+      result += @
+      value--
+  <span class="hljs-keyword">return</span> result</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-17">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-17">&#182;</a>
+              </div>
+              <p>@.<strong>size</strong></p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-attribute">String</span>::size = <span class="hljs-function"><span class="hljs-params">()</span>-&gt;</span>
+  @.length</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-18">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-18">&#182;</a>
+              </div>
+              <p>@.<strong>starts_With</strong> value</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-attribute">String</span>::starts_With = <span class="hljs-function"><span class="hljs-params">(value)</span>-&gt;</span>
+  <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> value
+    <span class="hljs-literal">false</span>
+  <span class="hljs-keyword">else</span>
+    @.valueOf().slice(<span class="hljs-number">0</span>,value.length) <span class="hljs-keyword">is</span> value</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-19">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-19">&#182;</a>
+              </div>
+              <p>@.<strong>to_Safe_String</strong></p>
+<p>Returns a string where all chars that are dont match the regex are replaced
+with a - (dash)</p>
+<p>The current regex allows</p>
+<ul>
+<li>lowercase letters</li>
+<li>uppercase letters</li>
+<li>numbers</li>
+<li>the chars: , - _  (comma, dash and underscore)</li>
+</ul>
+<p>The letters capitalization is modified, with the returned string being converted
+into lowercase</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-attribute">String</span>::to_Safe_String = <span class="hljs-function"><span class="hljs-params">()</span>-&gt;</span>
+  @.replace(<span class="hljs-regexp">/[^a-zA-Z0-9.\-_]/gi</span>, <span class="hljs-string">'-'</span>).lower()</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-20">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-20">&#182;</a>
+              </div>
+              <p>@.<strong>trim</strong></p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-attribute">String</span>::trim = <span class="hljs-function"><span class="hljs-params">()</span>-&gt;</span>
+  @.replace(<span class="hljs-regexp">/^\s+|\s+$/g</span>, <span class="hljs-string">''</span>)</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-21">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-21">&#182;</a>
+              </div>
+              <p>@.<strong>twice</strong></p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-attribute">String</span>::twice = <span class="hljs-function"><span class="hljs-params">()</span>-&gt;</span>
+  @ + @</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-22">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-22">&#182;</a>
+              </div>
+              <p>@.<strong>upper</strong></p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-attribute">String</span>::upper = <span class="hljs-function"><span class="hljs-params">()</span>-&gt;</span>
+  @.toUpperCase()</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-23">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-23">&#182;</a>
+              </div>
+              <p>@.<strong>json_Parse</strong></p>
+<p>returns the object representation of the the json string @</p>
+<p>Note: if there is a prob parsing the json an empty object will be returned (use <strong>json_Valid</strong> to check for well formed json)</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-attribute">String</span>::json_Parse = <span class="hljs-function"><span class="hljs-params">()</span>-&gt;</span>
+  <span class="hljs-keyword">try</span>
+    JSON.parse(@)
+  <span class="hljs-keyword">catch</span>
+    {}</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-24">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-24">&#182;</a>
+              </div>
+              <p>@.<strong>json_Valid</strong></p>
+<p>Returns true if @ can be deserialised ok into a json object</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-attribute">String</span>::json_Valid = <span class="hljs-function"><span class="hljs-params">()</span>-&gt;</span>
+  <span class="hljs-keyword">try</span>
+    JSON.parse(@)
+    <span class="hljs-literal">true</span>
+  <span class="hljs-keyword">catch</span>
+    <span class="hljs-literal">false</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-25">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-25">&#182;</a>
+              </div>
+              <hr>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-26">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-26">&#182;</a>
+              </div>
+              <p>back to <a href="index.html">index</a></p>
+
+            </div>
+            
+        </li>
+        
+    </ul>
+  </div>
+</body>
+</html>

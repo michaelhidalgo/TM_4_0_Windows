@@ -1,0 +1,50 @@
+{
+  "name": "jscreole",
+  "version": "0.9.0",
+  "description": "A JavaScript library for parsing Creole 1.0 wiki markup.",
+  "main": "lib/creole.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codeholic/jscreole"
+  },
+  "keywords": [
+    "wikitext",
+    "jscreole"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codeholic/jscreole/issues"
+  },
+  "homepage": "https://github.com/codeholic/jscreole",
+  "devDependencies": {
+    "jsdom": "^3.1.0",
+    "mocha": "^2.1.0"
+  },
+  "gitHead": "5b7b5064186050a7961df9295dd304074d68a2d5",
+  "_id": "jscreole@0.9.0",
+  "_shasum": "cb79c880052261f7e867fb2146d9880626b5934e",
+  "_from": "jscreole@latest",
+  "_npmVersion": "2.1.17",
+  "_nodeVersion": "0.10.33",
+  "_npmUser": {
+    "name": "diniscruz",
+    "email": "dinis.cruz@owasp.org"
+  },
+  "maintainers": [
+    {
+      "name": "diniscruz",
+      "email": "dinis.cruz@owasp.org"
+    }
+  ],
+  "dist": {
+    "shasum": "cb79c880052261f7e867fb2146d9880626b5934e",
+    "tarball": "http://registry.npmjs.org/jscreole/-/jscreole-0.9.0.tgz"
+  },
+  "_resolved": "https://registry.npmjs.org/jscreole/-/jscreole-0.9.0.tgz"
+}

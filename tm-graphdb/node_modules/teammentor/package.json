@@ -1,0 +1,67 @@
+{
+  "name": "teammentor",
+  "version": "0.1.2",
+  "description": "TEAM Mentor nodeJS API",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --compilers coffee:coffee-script/register --recursive -R list",
+    "watch": "npm run test -- -w",
+    "coverage": "./bin/local-code-coverage.sh",
+    "coverage-publish": "./bin/coveralls-code-coverage.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TeamMentor/node-teammentor.git"
+  },
+  "keywords": [
+    "TEAM",
+    "mentor"
+  ],
+  "author": {
+    "name": "Dinis Cruz",
+    "email": "dinis.cruz@owasp.org",
+    "url": "http://blog.diniscruz.com/"
+  },
+  "license": "TeamMentor Commercial License",
+  "bugs": {
+    "url": "https://github.com/TeamMentor/node-teammentor/issues"
+  },
+  "homepage": "https://github.com/TeamMentor/node-teammentor",
+  "dependencies": {
+    "coffee-script": "^1.8.0",
+    "fluentnode": "*",
+    "github": "^0.2.3",
+    "jade": "^1.8.2",
+    "node-uuid": "^1.4.2",
+    "request": "^2.51.0",
+    "xml2js": "^0.4.4"
+  },
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "cheerio": "^0.18.0",
+    "mocha": "^2.0.1"
+  },
+  "gitHead": "6b00186e8586d3f3d96686c37d9665dcbb7f3fa9",
+  "_id": "teammentor@0.1.2",
+  "_shasum": "b7c4c898b62e3a135548954e59e3d3a14b188b91",
+  "_from": "teammentor@latest",
+  "_npmVersion": "2.1.17",
+  "_nodeVersion": "0.10.33",
+  "_npmUser": {
+    "name": "diniscruz",
+    "email": "dinis.cruz@owasp.org"
+  },
+  "maintainers": [
+    {
+      "name": "diniscruz",
+      "email": "dinis.cruz@owasp.org"
+    }
+  ],
+  "dist": {
+    "shasum": "b7c4c898b62e3a135548954e59e3d3a14b188b91",
+    "tarball": "http://registry.npmjs.org/teammentor/-/teammentor-0.1.2.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/teammentor/-/teammentor-0.1.2.tgz",
+  "readme": "ERROR: No README data found!"
+}

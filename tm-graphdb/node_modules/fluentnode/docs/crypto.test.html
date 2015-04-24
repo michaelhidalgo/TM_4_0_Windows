@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>crypto.test.coffee</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+  <link rel="stylesheet" media="all" href="docco.css" />
+</head>
+<body>
+  <div id="container">
+    <div id="background"></div>
+    
+      <ul id="jump_to">
+        <li>
+          <a class="large" href="javascript:void(0);">Jump To &hellip;</a>
+          <a class="small" href="javascript:void(0);">+</a>
+          <div id="jump_wrapper">
+          <div id="jump_page">
+            
+              
+              <a class="source" href="Array.html">
+                Array.litcoffee
+              </a>
+            
+              
+              <a class="source" href="Boolean.html">
+                Boolean.litcoffee
+              </a>
+            
+              
+              <a class="source" href="Function.html">
+                Function.litcoffee
+              </a>
+            
+              
+              <a class="source" href="Number.html">
+                Number.litcoffee
+              </a>
+            
+              
+              <a class="source" href="Object.html">
+                Object.litcoffee
+              </a>
+            
+              
+              <a class="source" href="String.html">
+                String.litcoffee
+              </a>
+            
+              
+              <a class="source" href="_register.html">
+                _register.js
+              </a>
+            
+              
+              <a class="source" href="assert_Array.html">
+                assert_Array.litcoffee
+              </a>
+            
+              
+              <a class="source" href="assert_Boolean.html">
+                assert_Boolean.litcoffee
+              </a>
+            
+              
+              <a class="source" href="assert_Function.html">
+                assert_Function.litcoffee
+              </a>
+            
+              
+              <a class="source" href="assert_Number.html">
+                assert_Number.litcoffee
+              </a>
+            
+              
+              <a class="source" href="assert_Object.html">
+                assert_Object.litcoffee
+              </a>
+            
+              
+              <a class="source" href="assert_String.html">
+                assert_String.litcoffee
+              </a>
+            
+              
+              <a class="source" href="console.html">
+                console.litcoffee
+              </a>
+            
+              
+              <a class="source" href="crypto.html">
+                crypto.litcoffee
+              </a>
+            
+              
+              <a class="source" href="fs.html">
+                fs.litcoffee
+              </a>
+            
+              
+              <a class="source" href="globals.html">
+                globals.litcoffee
+              </a>
+            
+              
+              <a class="source" href="http.html">
+                http.litcoffee
+              </a>
+            
+              
+              <a class="source" href="index.html">
+                index.md
+              </a>
+            
+              
+              <a class="source" href="path.html">
+                path.litcoffee
+              </a>
+            
+              
+              <a class="source" href="process.html">
+                process.litcoffee
+              </a>
+            
+              
+              <a class="source" href="Array.test.html">
+                Array.test.coffee
+              </a>
+            
+              
+              <a class="source" href="Boolean.test.html">
+                Boolean.test.coffee
+              </a>
+            
+              
+              <a class="source" href="Function.test.html">
+                Function.test.coffee
+              </a>
+            
+              
+              <a class="source" href="Number.test.html">
+                Number.test.coffee
+              </a>
+            
+              
+              <a class="source" href="Object.test.html">
+                Object.test.coffee
+              </a>
+            
+              
+              <a class="source" href="String.test.html">
+                String.test.coffee
+              </a>
+            
+              
+              <a class="source" href="Array.test.html">
+                Array.test.coffee
+              </a>
+            
+              
+              <a class="source" href="Boolean.test.html">
+                Boolean.test.coffee
+              </a>
+            
+              
+              <a class="source" href="Function.test.html">
+                Function.test.coffee
+              </a>
+            
+              
+              <a class="source" href="Number.test.html">
+                Number.test.coffee
+              </a>
+            
+              
+              <a class="source" href="Object.test.html">
+                Object.test.coffee
+              </a>
+            
+              
+              <a class="source" href="String.test.html">
+                String.test.coffee
+              </a>
+            
+              
+              <a class="source" href="console.test.html">
+                console.test.coffee
+              </a>
+            
+              
+              <a class="source" href="crypto.test.html">
+                crypto.test.coffee
+              </a>
+            
+              
+              <a class="source" href="fs.test.html">
+                fs.test.coffee
+              </a>
+            
+              
+              <a class="source" href="globals.test.html">
+                globals.test.coffee
+              </a>
+            
+              
+              <a class="source" href="http.test.html">
+                http.test.coffee
+              </a>
+            
+              
+              <a class="source" href="path.test.html">
+                path.test.coffee
+              </a>
+            
+              
+              <a class="source" href="process.test.html">
+                process.test.coffee
+              </a>
+            
+          </div>
+        </li>
+      </ul>
+    
+    <ul class="sections">
+        
+          <li id="title">
+              <div class="annotation">
+                  <h1>crypto.test.coffee</h1>
+              </div>
+          </li>
+        
+        
+        
+        <li id="section-1">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-1">&#182;</a>
+              </div>
+              
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-built_in">require</span>(<span class="hljs-string">'../src/crypto'</span>)
+
+describe <span class="hljs-string">'crypo |'</span>,<span class="hljs-function">-&gt;</span>
+  value = <span class="hljs-string">"abc123"</span>
+
+  it <span class="hljs-string">'add_Random_Chars'</span>, <span class="hljs-function">-&gt;</span>
+    using value,<span class="hljs-function">-&gt;</span>
+      @.add_Random_Chars(<span class="hljs-number">1</span>)  .size().assert_Is    value.size().add <span class="hljs-number">1</span>
+      @.add_Random_Chars()   .size().assert_Above value.size().add <span class="hljs-number">5</span>
+      @.add_Random_Chars(<span class="hljs-number">100</span>).size().assert_Above value.size().add <span class="hljs-number">80</span> <span class="hljs-comment"># the chars size is less than 101 (I think is due to weird ascii values)</span>
+
+
+  it <span class="hljs-string">'add_Random_String'</span>, <span class="hljs-function">-&gt;</span>
+    using value,<span class="hljs-function">-&gt;</span>
+      @.add_Random_String()   .size().assert_Is value.size().add <span class="hljs-number">10</span>
+      @.add_Random_String(<span class="hljs-number">1</span>)  .size().assert_Is value.size().add <span class="hljs-number">1</span>
+      @.add_Random_String(<span class="hljs-number">100</span>).size().assert_Is value.size().add <span class="hljs-number">100</span>
+
+
+  it <span class="hljs-string">'add_Random_Letters'</span>, <span class="hljs-function">-&gt;</span>
+      value.add_Random_Letters(<span class="hljs-number">5</span>)  .size().assert_Is value.size().add <span class="hljs-number">5</span>
+      randomLetters = <span class="hljs-string">""</span>.add_Random_Letters(<span class="hljs-number">5</span>)
+      charSet_Numbers = <span class="hljs-string">'0123456789'</span>
+      charSet_Letters = <span class="hljs-string">'abcdefghijklmnopqrstuvwxyz'</span>
+      <span class="hljs-keyword">for</span> char <span class="hljs-keyword">in</span> randomLetters
+          (<span class="hljs-function">-&gt;</span> charSet_Numbers.assert_Contains(char)).assert_Throws()
+          (<span class="hljs-function">-&gt;</span> charSet_Letters.assert_Contains(char)).assert_Not_Throws()
+
+  it <span class="hljs-string">'add_5_Random_Letters'</span>, <span class="hljs-function">-&gt;</span>
+      value.add_5_Random_Letters().size().assert_Is value.size().add <span class="hljs-number">5</span>
+      value.add_5_Letters().size().assert_Is value.size().add <span class="hljs-number">5</span>
+      <span class="hljs-string">''</span>.add_5_Random_Letters.assert_Is <span class="hljs-string">''</span>.add_5_Letters
+
+  it <span class="hljs-string">'add_Random_Numbers'</span>, <span class="hljs-function">-&gt;</span>
+      value.add_Random_Numbers(<span class="hljs-number">5</span>  ).size().assert_Is value.size() + <span class="hljs-number">5</span>
+      <span class="hljs-string">""</span>   .add_Random_Numbers(<span class="hljs-number">500</span>).size().assert_Is <span class="hljs-number">500</span>
+      randomNumbers = <span class="hljs-string">""</span>.add_Random_Numbers(<span class="hljs-number">5</span>)
+      charSet_Numbers = <span class="hljs-string">'0123456789'</span>
+      charSet_Letters = <span class="hljs-string">'abcdefghijklmnopqrstuvwxyz'</span>
+      <span class="hljs-keyword">for</span> char <span class="hljs-keyword">in</span> randomNumbers
+          (<span class="hljs-function">-&gt;</span> charSet_Numbers.assert_Contains(char)).assert_Not_Throws()
+          (<span class="hljs-function">-&gt;</span> charSet_Letters.assert_Contains(char)).assert_Throws()
+
+   it <span class="hljs-string">'random_String'</span>,<span class="hljs-function">-&gt;</span>
+    (<span class="hljs-number">0</span>).random_String().size().assert_Is_Equal_To(<span class="hljs-number">10</span>)
+    (<span class="hljs-number">1</span>).random_String().size().assert_Is_Equal_To(<span class="hljs-number">1</span>)
+    (<span class="hljs-number">1</span>).random_String().assert_Size_Is(<span class="hljs-number">1</span>)
+
+   it <span class="hljs-string">'random_Letters'</span>,<span class="hljs-function">-&gt;</span>
+    (<span class="hljs-number">10</span>).random_Letters().size().assert_Is_Equal_To(<span class="hljs-number">10</span>)</pre></div></div>
+            
+        </li>
+        
+    </ul>
+  </div>
+</body>
+</html>
