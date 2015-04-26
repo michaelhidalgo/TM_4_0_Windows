@@ -1,0 +1,20 @@
+{
+  "name": "TM_4_0_Windows",
+  "version": "0.0.1",
+  "description": "TM 4.0 build for windows",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tm-build/TM_4_0_Windows.git"
+  },
+  "author": "Dinis Cruz <dinis.cruz@owasp.org> (http://blog.diniscruz.com/)",
+  "license": "TM Commercial License",
+  "bugs": {
+    "url": "https://github.com/tm-build/TM_4_0_Windows/issues"
+  },
+  "homepage": "https://github.com/tm-build/TM_4_0_Windows",
+  "engines": {"node" : "0.12.x"}
+}
